@@ -16,16 +16,6 @@ while True:
     if age.lower() == "q":
         break
     else:
-        age = int(age)
-        if age < 4:
-            print(f"The ticket amount is ZERO.")
-        elif 3 < age < 13:
-            print(f"The ticket amount is {ticket_price/2}.")
-        else:
-            print(f"The ticket amount is {ticket_price}.")
-###############
-
-    else:
         if age.isdigit():
             if 0 < int(age) < 4:
                 print(f"The ticket amount is ZERO.")
@@ -39,14 +29,3 @@ while True:
         else:
             print(
                 f"**Age must be a positive integer(eg.25), but received '{age}'.")
-################
-        # try:
-        #     age = int(age)
-        #     if age < 4:
-        #         print(f"The ticket amount is ZERO.")
-        #     elif 3 < age < 13:
-        #         print(f"The ticket amount is {ticket_price/2}.")
-        #     else:
-        #         print(f"The ticket amount is {ticket_price}.")
-        # except:
-        #     print("Sorry, I couldn't understand that.")

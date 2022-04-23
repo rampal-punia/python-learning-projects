@@ -1,14 +1,14 @@
 '''Python Project: 
-Option 1: Print a list of even numbers upto nth term.
-Option 2: Print a list of odd numbers upto nth term.
+Option 1: Print a list of even numbers up to nth term.
+Option 2: Print a list of odd numbers up to nth term.
 Option 3: Check if a number is even or odd.
 Run the project in a loop, until user enters 'q'.
 '''
 
 while True:
     print("=====================================================")
-    print("Option 1: Print a list of even numbers upto nth term.")
-    print("Option 2: Print a list of odd numbers upto nth term.")
+    print("Option 1: Print a list of even numbers up to nth term.")
+    print("Option 2: Print a list of odd numbers up to nth term.")
     print("Option 3: Check if a number is even or odd.")
     print("Enter 'q' to end the program.")
     print("=====================================================")
