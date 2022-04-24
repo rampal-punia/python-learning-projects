@@ -1,4 +1,5 @@
 from collections import Counter
+import requests
 
 
 def get_series(sentence):
@@ -15,7 +16,7 @@ def get_series(sentence):
 
 
 sentence = "A quick brown fox jumps over the lazy dog"
-series = get_series(sentence)
-print(series[0])
-print(series[1])
-print(series[2])
+my_series = get_series(sentence)
+print(my_series[0])
+print(my_series[1])
+print(my_series[2])

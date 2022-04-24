@@ -1,10 +1,9 @@
 '''Python Projects: Calculate the areas of polygons.
-ToDo:
     => Display user the options for selecting area of required polygon.
     => As per the user selection, ask him the required parameters.
     => Show the area of required polygons.
-    => Write functions to calculate the area of each polygon.
-    => Validate the user input. 
+    => Write separate functions to calculate the area of each polygon.
+    => Validate the user input.
 '''
 import helper
 while True:
@@ -40,7 +39,8 @@ while True:
                 f"The area of square with side {side}: {area:.2f}")
 
         elif user_option == '4':
-            width = input("Enter height, width (eg. 5, 7): ").split(', ')
+            height, width = input(
+                "Enter height, width (eg. 5, 7): ").split(', ')
             area = helper.rectangle_area(height, width)
             print(
                 f"The area of rectangle with height {height}, width {width}: {area:.2f}")
@@ -52,12 +52,24 @@ while True:
             print(
                 f"The area of trapezium with side1 {side1}, side2 {side2}, height {height}: {area:.2f}")
 
-        elif user_option == '5':
-            side1, side2, height = input(
-                "Enter side1, side2, height (eg. 5, 7, 9): ").split(', ')
-            area = helper.trapezium_area(side1, side2, height)
+        elif user_option == '6':
+            base, height = input("Enter base, height (eg. 5, 7): ").split(', ')
+            area = helper.parallelogram_area(base, height)
             print(
-                f"The area of trapezium with side1 {side1}, side2 {side2}, height {height}: {area:.2f}")
+                f"The area of parallelogram with base {base} and height {height}: {area:.2f}")
+
+        elif user_option == '7':
+            diagonal1, diagonal2 = input(
+                "Enter diagonal1, diagonal2 (eg. 5, 7): ").split(', ')
+            area = helper.rhombus_area(diagonal1, diagonal2)
+            print(
+                f"The area of rhombus with diagonal1 {diagonal1} and diagonal2 {diagonal2}: {area:.2f}")
+
+        elif user_option == '8':
+            radius = input("Enter radius(eg. 5): ")
+            area = helper.circle_area(radius)
+            print(
+                f"The area of circle with radius {radius}: {area:.2f}")
 
         is_continue = input("Do you want to continue?(yes/no): ")
 

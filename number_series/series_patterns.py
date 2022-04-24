@@ -1,4 +1,4 @@
-import PythonProjects.helper_series as helper_series
+import helper_series
 
 while True:
     print("==============================================")
