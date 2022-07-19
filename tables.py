@@ -1,3 +1,6 @@
+'''Python Quick Codes: Generate table of a given number.'''
+
+
 print("Enter a number and I will print it's table.")
 print("Enter 'quit' to end the program.")
 

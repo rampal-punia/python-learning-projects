@@ -16,8 +16,8 @@ def msgs_to_user():
 
 
 def play_copycat_game():
-    print("I am a copy cat! I will reapeat whatever you type.")
-    print("I am a copy cat! I will reapeat whatever you type.")
+    print("I am a copy cat! I will repeat whatever you type.")
+    print("I am a copy cat! I will repeat whatever you type.")
     print("Enter 'q' to end the program.")
     while True:
         text = input("What do you have to say?: ")
